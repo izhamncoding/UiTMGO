@@ -1,0 +1,242 @@
+<html>
+	<head>
+	
+	<style>
+		
+		*{
+			margin:0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+		}
+		
+		body{
+			display: flex;
+			height: 100vh;
+			justify-content: center;
+			align-items: center;
+			background: url(https://pahang.uitm.edu.my/images/Raub/kampus_raub.png);
+		}
+		
+		.container{
+			max-width: 700px;
+			width: 100%;
+			background: #fff;
+			padding: 25px 30px;
+			border-radius: 3px;
+		}
+		
+		.container .title{
+			font-size: 25px;
+			font-weight: 500;
+			position: relative;
+		}
+		
+		
+		.container form .user-details{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 20px 0 12px 0;
+		}
+		
+		form .user-details .input-box{
+			margin-bottom: 15px;
+			width: calc(100% / 2 - 20px);
+		}
+		
+		.user-details .input-box .details{
+			display: block;
+			font-weight: 500;
+			margin-bottom: 5px;
+		}
+		
+		.user-details .input-box input{
+			height: 45px;
+			width: 100%;
+			outline: node;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			padding-left: 15px;
+			font-size: 16px;
+			border-bottom-width: 2px;
+			transition: all 0.3s ease;
+		}
+		
+		.user-details .input-box input:focus,
+		.user-details .input-box input:focus{
+			border-color: #9b59b6
+		}
+		
+		form .gender-details .gender-title{
+			font-size: 20px;
+			font-weight: 500;
+		}
+		
+		form .gender-details .category{
+			display: flex;
+			width: 80%;
+			margin: 14px 0;
+			justify-content: space-between;
+		}
+		
+		.gender-details .category label{
+			display: flex;
+			align-items: center;
+		}
+		
+		.gender-details .category .dot{
+			height: 18px;
+			width: 18px;
+			background: #d9d9d9;
+			border-radius: 50%;
+			margin-right: 10px;
+			border: 5px solid transparent;
+			transition: all 0.3s ease;
+		}
+		
+		#dot-1:checked ~ .category label .one,
+		#dot-2:checked ~ .category label .two,
+		#dot-3:checked ~ .category label .three{
+			border-color: #d9d9d9;
+			background: #9b59b6;
+		}
+		
+		form input[type = "radio"]{
+			display: none;
+		}
+		
+		form .button{
+			height: 45px;
+			margin: 45px 0;
+		}
+		
+		form .button input{
+			height: 100%;
+			width: 100%;
+			outline: none;
+			color: #fff;
+			border: none;
+			font-size: 18px;
+			font-weight: 500;
+			letter-spacing: 1px;
+			background: rgb(100, 64, 137);
+		}
+		
+		form .button input:hover{
+			background: rgb(100, 64, 137,.50);
+		}
+		
+		@media (max-width: 584px) {
+				.container{
+				max-width: 100%;
+			}
+			
+			form .user-details .input-box{
+				margin-bottom: 15px;
+				width: 100%;
+			}
+			
+			form .gender-details .category{
+				width: 100%;
+			}
+			
+			.container form .user-details{
+				max-height: 300px;
+				overflow-y: scroll;
+			}
+			
+			.user-details::-webkit-scrollbar{
+				width: 0;
+			}
+		}
+		
+		.topnav{
+			border-style: outset;
+			border-top-width: 8px;
+			border-color: black;
+			overflow:hidden;
+			background-color: black;
+			position: absolute;
+		}
+			
+		.topnav a{
+			float:left;
+			color: white;
+			text-align: center;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 25px;
+		}
+			
+		.topnav:hover{
+			background-color: blue;
+			color: red;
+		}
+			
+		.topnav a.active {
+			color: white;
+		}
+		
+		.b1{
+			display: block;
+			width: 260px;
+			padding: 10px 0;
+			text-decoration: none;
+			color: linear-gradient(135deg, #71b7e6, #9b59b6);
+			text-align: center;
+			margin: auto;
+			transition: 0.4s all;
+		}
+		
+	</style>
+	
+		<meta charset = "UTF-8">
+		<title> Registration Form </title>
+		<meta name="viewport" content = "width=device-width, initial-scale = 1.0"> 
+		
+	</head>
+	
+	<body>
+	
+		<div class = "container">
+		<div class = "title"> Registration </div>
+		<form method="post" action = "regprocess.php">
+		<div class = "user-details">
+		
+		<div class = "input-box">
+			<span class = "details"> Full Name </span>
+			<input type = "text" placeholder = "Enter your name" name="name" required>
+		</div>
+		
+		<div class = "input-box">
+			<span class = "details"> Room Number </span>
+			<input type = "text" placeholder = "Enter your room number" name="address" required>
+		</div>
+		
+		<div class = "input-box">
+			<span class = "details"> Phone Number </span>
+			<input type = "text" placeholder = "Enter your number" name="number" required>
+		</div>
+		
+		<div class = "input-box">
+			<span class = "details"> Password </span>
+			<input type = "password" placeholder = "Enter your password" name="password" required>
+		</div>
+            
+           
+		
+            
+		</div>
+		
+		
+		<div class = "button">
+			<input type = "submit" value = "Register">
+		</div>
+		
+		<a class = "b1" href="index.php"> Back to home </a>
+		
+		</form>
+		</div>
+	</body>
+
+</html>

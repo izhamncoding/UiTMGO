@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Koulen', cursive;
+}
+
+td, th{
+    color: black;
+    text-align: center;
+    padding: 2px;
+    background-color: orangered;
+}
+
+td{
+    color: black;
+    text-align: center;
+    padding: 2px;
+    background-color: antiquewhite;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://pahang.uitm.edu.my/images/Raub/kampus_raub.png);
+    background-position: center;
+    background-size : cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    background-color: chocolate;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    border-color: white;
+    font-size: 50px;
+    color: white;
+    background-color: white;
+    width: 20%;
+    transform: translate(200%, -20%);
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 4px 0 #000, -1px 0 0 #000;
+    top: 300;
+}
+.text-box p{
+    margin: 10px 0 10px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    text-align: center;
+}
+
+.borderchocolate{
+    background-color: white;
+    border: 2px solid #D2691E;
+    border-radius: 15px;
+    padding-bottom: 15px;
+	text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.borderchocolate p{
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.case{
+    background-color: transparent;
+    margin: 5px 0;
+	text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.borderlogo{
+    border: 2px solid #D2691E;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.fullborder{
+    background-color: chocolate;
+    border: 1px solid brown;
+    border-radius: 15px;
+    padding: 100px;
+    width: 30%;
+    margin-left: 440px;
+    margin-bottom: auto;
+}
+.textalign{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    left: 30%;
+}
+
+.hr1{
+    background-color: chocolate;
+}
+
+.hr1 h1{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.dropbtn {
+  background-color: chocolate;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: chocolate;
+}
+
+.dropdown {
+  position: inherit;
+    
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:#f5a62a ;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
